@@ -1,0 +1,14 @@
+title User goes to the single page app
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server->Browser: spa
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server->Browser: spa.js
+note over Browser: Browser run spa.js. Script send HTTP GET request to download messages
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->Browser: data.json
+note over Browser: Browser parse data.json and update messages in ul.notes html tag
+
+

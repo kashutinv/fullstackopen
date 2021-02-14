@@ -1,0 +1,14 @@
+title User creates a new note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+Server->Browser: Status Code 302
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server->Browser: HTML code
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server->Browser: style.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server->Browser: main.js
+note over Browser: Run main.js code
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server->Browser: data.json
+note over Browser: Write messages from data.json to ul.notes HTML tag
